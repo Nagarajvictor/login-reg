@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            h1,
+            table{
+                text-align: center;
+            }
+            table{
+                padding-left: 400px;
+            }
+            body{
+                background-image: url("img.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                color:white;
+            }
+            td{
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <h1>Registration Form</h1>
+        <table>
+            <tr>
+                <td class="left">Username:</td>
+                <td>
+                   <input type="text" placeholder="Enter your Username" pattern="[a-Z]" minlength="3" size="40" required/>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">E-mail:</td>
+                <td>
+                    <input type="email" placeholder="xyz@company.com"  size="40" required/>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Phone no.:</td>
+                <td>
+                    <input type="tel" minlength="10" maxlength="10" size="40"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Gender:</td>
+                <td>
+                    <input type="radio" name="gender"/>
+                    <label>Male</label>
+                    <input type="radio" name="gender"/>
+                    <label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Set password</td>
+                <td>
+                    <input type="password"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Confirm password</td>
+                <td>
+                    <input type="password"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset"/>
+                    <button>Signup</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

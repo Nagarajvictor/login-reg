@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body{
+                text-align: center;
+                background-image: url("loginImg.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-top: 24%;
+            }
+            form{
+                padding-left: 100px;
+            }
+            #newuser{
+             color:red;
+             background-color: white;
+             width: 80px;
+             height: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: red;
+            }
+            #login{
+                color:red;
+             background-color: white;
+             width: 80px;
+             height: 40px;
+            }
+            #container{
+                background-color: rgb(193, 204, 203);
+                margin: 0px 400px;
+                padding:20px 0px;
+                border-radius: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <h1>Login</h1>
+        <form>
+           <table>
+               <tr>
+                   <td><label for="username">Username</label></td>
+                   <td>
+                       <input type="text" id="username" size="30" required minlength="3"/>
+                   </td>
+               </tr>
+               <tr>
+                   <td><label for="password">Password</label></td>
+                   <td>
+                       <input type="password" id="password" size="30" required minlength="8" maxlength="15"/>
+                   </td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td>
+                       <input type="button" value="Login" id="login"/>
+                   </td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td>To Create an account</td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td>
+                       <button id="newuser"><a href="form-registration.html" target="_blank">Signup</a></button>
+                   </td>
+               </tr>
+           </table>
+        </form>
+        </div>
+    </body>
+</html>
